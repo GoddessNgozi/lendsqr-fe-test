@@ -20,7 +20,7 @@ import './user.css';
     }, []);
 
     return (
-      <div>
+      <>
         <Header />
         <SideBar />
 
@@ -118,7 +118,7 @@ import './user.css';
         </table>
     
         </main>
-      </div>
+      </>
     );
   };
 
