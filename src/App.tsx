@@ -1,11 +1,9 @@
-import Login from "./pages/Login/Login";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import User from "./pages/User/User";
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      <Dashboard />
+      <User />
     </div>
   );
 }
