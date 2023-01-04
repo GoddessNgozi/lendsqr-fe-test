@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import Header from "../../components/Header/Header";
 import SideBar from "../../components/SideBar/SideBar";
 import {UserType} from "../../types/User.types";
+import filterIcon from '../../assets/icons/filter.svg';
 
   const Dashboard = () => {
     const [users, setUsers] = useState([])
@@ -45,12 +46,12 @@ import {UserType} from "../../types/User.types";
         <table>
         <thead>
         <tr>
-          <th>ORGANIZATION</th>
-          <th>USERNAME</th>
-          <th>EMAIL</th>
-          <th>PHONE NUMBER</th>
-          <th>DATE JOINED</th>
-          <th>STATUS</th>
+          <th><span>ORGANIZATION</span><button><img src={filterIcon} alt="" /></button></th>
+          <th><span>USERNAME</span><button><img src={filterIcon} alt="" /></button></th>
+          <th><span>EMAIL</span><button><img src={filterIcon} alt="" /></button></th>
+          <th><span>PHONE NUMBER</span><button><img src={filterIcon} alt="" /></button></th>
+          <th><span>DATE JOINED</span><button><img src={filterIcon} alt="" /></button></th>
+          <th><span>STATUS</span><button><img src={filterIcon} alt="" /></button></th>
         </tr>
         </thead>
         <tbody>
