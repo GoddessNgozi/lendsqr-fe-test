@@ -1,11 +1,11 @@
-import SideBar from "./components/Sidebar/Sidebar";
 import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <Login />
-      <SideBar />
+      <Dashboard />
     </div>
   );
 }
