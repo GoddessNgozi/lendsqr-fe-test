@@ -13,6 +13,9 @@ import filterIcon from '../../assets/icons/filter.svg';
       .then(res => setUsers(res))
     }, []);
 
+    const userDeets = users;
+    localStorage.setItem('userDeets', JSON.stringify(userDeets));
+
     return (
       <div>
         <Header />
@@ -56,7 +59,7 @@ import filterIcon from '../../assets/icons/filter.svg';
         </thead>
         <tbody>
         {users.map((user: UserType) => 
-                <tr>
+                <tr key={user.id}>
                 <td>{user.orgName}</td>
                 <td>{user.userName}</td>
                 <td>{user.email}</td>

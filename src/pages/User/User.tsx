@@ -11,9 +11,7 @@ import { Link } from 'react-router-dom';
 import './user.css';
 
   const User = () => {
-    const [users, setUsers] = useState([]);
-    const [user, setUser] = useState([]);
-    
+    const [users, setUsers] = useState([]);   
 
     useEffect(() => {
       fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
@@ -22,10 +20,9 @@ import './user.css';
     }, []);
 
     const handleDetails = (index: number) => {
-      const newUsers = [...users]
-      const deets = newUsers.splice(index,1)
-      setUser(deets);
-      return user;
+      const userDeets = JSON.parse(localStorage.getItem('userDeets') || '{}');
+      userDeets[index].showDetails = true;
+      localStorage.setItem('userDeets', JSON.stringify(userDeets));
     }
 
     return (
@@ -99,7 +96,7 @@ import './user.css';
         </thead>
         <tbody>
         {users.map((user: UserType, index) => 
-                <tr>
+                <tr key={user.id}>
                 <td>{user.orgName}</td>
                 <td>{user.userName}</td>
                 <td>{user.email}</td>
