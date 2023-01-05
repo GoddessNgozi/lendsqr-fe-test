@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import Header from "../../components/Header/Header";
-import SideBar from "../../components/SideBar/SideBar";
+import SideBar from '../../components/Sidebar/Sidebar';
 import {UserType} from "../../types/User.types";
 import filterIcon from '../../assets/icons/filter.svg';
 

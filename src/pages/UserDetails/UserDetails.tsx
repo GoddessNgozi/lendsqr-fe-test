@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import SideBar from "../../components/SideBar/SideBar";
+import SideBar from "../../components/Sidebar/Sidebar";
 import {UserType} from "../../types/User.types";
 
 interface Props {

@@ -1,11 +1,14 @@
 import Login from "./pages/Login/Login";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import { Routes, Route } from 'react-router-dom';
+import UserDetails from "./pages/UserDetails/UserDetails";
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/details/:name" element={<UserDetails user={user}/>} />
+      </Routes>
     </div>
   );
 }

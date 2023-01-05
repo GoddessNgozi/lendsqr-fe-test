@@ -1,4 +1,4 @@
-export interface UserType {
+export type UserType = {
     id: string;
     createdAt: string;
     orgName: string;

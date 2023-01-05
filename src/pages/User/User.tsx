@@ -1,16 +1,18 @@
 import {useState, useEffect} from 'react'
 import Header from "../../components/Header/Header";
-import SideBar from "../../components/SideBar/SideBar";
+import SideBar from '../../components/Sidebar/Sidebar';
 import {UserType} from "../../types/User.types";
 import filterIcon from '../../assets/icons/filter.svg';
 import dotsIcon from '../../assets/icons/3dots.svg';
 import viewIcon from '../../assets/icons/view.svg';
 import blacklistIcon from '../../assets/icons/blacklist.svg';
 import activateIcon from '../../assets/icons/activate.svg';
+import { Link } from 'react-router-dom';
 import './user.css';
 
   const User = () => {
     const [users, setUsers] = useState([]);
+    const [user, setUser] = useState([]);
     
 
     useEffect(() => {
@@ -18,6 +20,13 @@ import './user.css';
       .then(response => response.json())
       .then(res => setUsers(res))
     }, []);
+
+    const handleDetails = (index: number) => {
+      const newUsers = [...users]
+      const deets = newUsers.splice(index,1)
+      setUser(deets);
+      return user;
+    }
 
     return (
       <>
@@ -89,7 +98,7 @@ import './user.css';
         </tr>
         </thead>
         <tbody>
-        {users.map((user: UserType) => 
+        {users.map((user: UserType, index) => 
                 <tr>
                 <td>{user.orgName}</td>
                 <td>{user.userName}</td>
@@ -101,7 +110,9 @@ import './user.css';
                 <div className="dropdown-content-two">
                     <div>
                         <img src={viewIcon} alt="" />
-                        <button>View Details</button>
+                        <Link to='/details'>
+                        <button onClick={() => handleDetails(index)}>View Details</button>
+                        </Link>
                     </div>
                     <div>
                         <img src={blacklistIcon} alt="" />
