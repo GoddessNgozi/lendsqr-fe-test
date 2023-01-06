@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
-import Header from "../../components/Header/Header";
-import SideBar from '../../components/Sidebar/Sidebar';
-import {UserType} from "../../types/User.types";
+import Header from "../components/Header";
+import SideBar from '../components/Sidebar';
+import {UserType} from "../types/User.types";
 import filterIcon from '../../assets/icons/filter.svg';
 import dotsIcon from '../../assets/icons/3dots.svg';
 import viewIcon from '../../assets/icons/view.svg';

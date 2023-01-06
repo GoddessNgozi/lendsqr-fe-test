@@ -1,22 +1,22 @@
-import loansIcon from '../../assets/icons/loans.svg';
-import usersIcon from '../../assets/icons/users-icon.svg';
-import handshake from '../../assets/icons/handshake-regular1.svg'
-import karmaIcon from '../../assets/icons/user-times 1.svg';
-import savingsIcon from '../../assets/icons/piggy-bank 1.svg';
-import guarantorsIcon from '../../assets/icons/guarantors.svg';
-import whitelistIcon from '../../assets/icons/user-check 1.svg';
-import loanRequestsIcon from '../../assets/icons/loan-requests.svg';
-import organisationsIcon from '../../assets/icons/briefcase 1.svg';
-import savingsProductsIcon from '../../assets/icons/Group.svg';
-import servicesIcon from '../../assets/icons/galaxy 1.svg';
-import settlementsIcon from '../../assets/icons/scroll 1.svg';
-import transactionsIcon from '../../assets/icons/transactions.svg';
-import reportsIcon from '../../assets/icons/chart-bar 2.svg';
-import preferencesIcon from '../../assets/icons/sliders-h 1.svg';
-import pricingIcon from '../../assets/icons/badge-percent 1.svg';
-import auditIcon from '../../assets/icons/clipboard-list 1.svg';
-import dashboardIcon from '../../assets/icons/home-icon.svg';
-import dropdownIcon from '../../assets/icons/dropdown-arrow.svg';
+import loansIcon from '../assets/icons/loans.svg';
+import usersIcon from '../assets/icons/users-icon.svg';
+import handshake from '../assets/icons/handshake-regular1.svg'
+import karmaIcon from '../assets/icons/user-times 1.svg';
+import savingsIcon from '../assets/icons/piggy-bank 1.svg';
+import guarantorsIcon from '../assets/icons/guarantors.svg';
+import whitelistIcon from '../assets/icons/user-check 1.svg';
+import loanRequestsIcon from '../assets/icons/loan-requests.svg';
+import organisationsIcon from '../assets/icons/briefcase 1.svg';
+import savingsProductsIcon from '../assets/icons/Group.svg';
+import servicesIcon from '../assets/icons/galaxy 1.svg';
+import settlementsIcon from '../assets/icons/scroll 1.svg';
+import transactionsIcon from '../assets/icons/transactions.svg';
+import reportsIcon from '../assets/icons/chart-bar 2.svg';
+import preferencesIcon from '../assets/icons/sliders-h 1.svg';
+import pricingIcon from '../assets/icons/badge-percent 1.svg';
+import auditIcon from '../assets/icons/clipboard-list 1.svg';
+import dashboardIcon from '../assets/icons/home-icon.svg';
+import dropdownIcon from '../assets/icons/dropdown-arrow.svg';
 
 const SideBar = () => {
   return (

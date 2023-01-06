@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+/* colors */
+/* text colors */
+/* event colors */
+/* sizes */
+/* font sizes */
+/* box-radius */
+/* box-shadow */
+/* mobile-first approach */
+/* responsive breakpoints */
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 18.77px;
+}
+
+.text-lg {
+  font-size: 12px;
+  line-height: 14.08px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+* {
+  font-size: 16px;
+  line-height: 18.77px;
+  color: #213f7d;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.divider {
+  height: 2px;
+  opacity: 0.4;
+  background-color: rgba(33, 63, 125, 0.168627451);
+}
+
+.loading {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: #39cdcc;
+  text-align: center;
+}/*# sourceMappingURL=Index.css.map */

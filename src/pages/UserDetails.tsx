@@ -1,5 +1,5 @@
-import Header from "../../components/Header/Header";
-import SideBar from "../../components/Sidebar/Sidebar";
+import Header from "../components/Header";
+import SideBar from "../components/Sidebar";
 
 
   const UserDetails = () => {

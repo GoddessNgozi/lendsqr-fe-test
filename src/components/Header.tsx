@@ -3,8 +3,8 @@ import {
   IoMdNotificationsOutline as NotificationsOutlineIcon,
   IoMdArrowDropdown as ArrowDropdownIcon,
 } from 'react-icons/io';
-import logo from '../../assets/lendsqr-logo.svg';
-import user from '../../assets/image 4.png';
+import logo from '../assets/lendsqr-logo.svg';
+import user from '../assets/image 4.png';
 
 const Header = () => {
   return (
