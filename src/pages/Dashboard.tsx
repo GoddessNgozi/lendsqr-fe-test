@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import Header from "../components/Header";
 import SideBar from '../components/Sidebar';
 import {UserType} from "../types/User.types";
-import filterIcon from '../../assets/icons/filter.svg';
+import filterIcon from '../assets/icons/filter.svg';
 
   const Dashboard = () => {
     const [users, setUsers] = useState([])

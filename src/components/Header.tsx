@@ -9,21 +9,21 @@ import user from '../assets/image 4.png';
 const Header = () => {
   return (
     <header>
-    <nav>
-      <div>
+    <nav className='Topnav'>
+      <div className='Logo'>
         <img src={logo} alt='' />
       </div>
-      <div>
-        <input
+      <div className='search'>
+        <input className='search-input'
           type='text'
           placeholder='Search for anything'
           aria-label='Search box'
         />
-        <button>
-          <SearchIcon />
+        <button className='search-btn'>
+          <SearchIcon  className='search-icon'/>
         </button>
       </div>
-      <div>
+      <div className='user-info'>
         <div>
           <a href='#/docs'>Docs</a>
         </div>
@@ -31,9 +31,9 @@ const Header = () => {
           <NotificationsOutlineIcon />
         </div>
 
-        <div>
+        <div className='user-profile'>
           <img src={user} alt='user logo' />
-          <span>Adedeji</span>
+          <h6>Adedeji</h6>
           <ArrowDropdownIcon />
           </div>
       </div>
