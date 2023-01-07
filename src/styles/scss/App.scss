@@ -76,3 +76,37 @@
         flex-wrap: wrap;
     }
 }
+
+/* Sidebar */
+.sidebar {
+    background-color: white;
+    width: 15%;
+    box-shadow: 3px 5px 20px rgb(0 0 0 / 4%);
+    border: 1px solid rgba(33, 63, 125, 0.06);
+}
+
+aside li, .sidebar-top {
+    font-size: clamp(10px, 1vw, 16px);
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgba(33, 63, 125, 0.4);
+    padding: 10px clamp(5px, 1.5vw, 30px);
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+aside span, img {
+    color: rgba(33, 63, 125, 0.4);
+    font-size: clamp(10px, 1vw, 16px);
+}
+
+aside h6 {
+    margin-top: 41px;
+    margin-left: clamp(5px, 1.5vw, 30px);
+    color: rgb(84, 95, 125);
+}
+
+.svg-inline--fa {
+    color: rgba(33, 63, 125, 0.4);
+}

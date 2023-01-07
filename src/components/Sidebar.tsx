@@ -1,126 +1,131 @@
-import loansIcon from '../assets/icons/loans.svg';
-import usersIcon from '../assets/icons/users-icon.svg';
-import handshake from '../assets/icons/handshake-regular1.svg'
-import karmaIcon from '../assets/icons/user-times 1.svg';
-import savingsIcon from '../assets/icons/piggy-bank 1.svg';
-import guarantorsIcon from '../assets/icons/guarantors.svg';
-import whitelistIcon from '../assets/icons/user-check 1.svg';
-import loanRequestsIcon from '../assets/icons/loan-requests.svg';
-import organisationsIcon from '../assets/icons/briefcase 1.svg';
-import savingsProductsIcon from '../assets/icons/Group.svg';
-import servicesIcon from '../assets/icons/galaxy 1.svg';
-import settlementsIcon from '../assets/icons/scroll 1.svg';
-import transactionsIcon from '../assets/icons/transactions.svg';
-import reportsIcon from '../assets/icons/chart-bar 2.svg';
-import preferencesIcon from '../assets/icons/sliders-h 1.svg';
-import pricingIcon from '../assets/icons/badge-percent 1.svg';
-import auditIcon from '../assets/icons/clipboard-list 1.svg';
-import dashboardIcon from '../assets/icons/home-icon.svg';
-import dropdownIcon from '../assets/icons/dropdown-arrow.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+    faBriefcase,
+    faChevronDown,
+    faHouseChimney,
+    faUserGroup,
+    faUsers,
+    faSackDollar,
+    faHandshake,
+    faPiggyBank,
+    faHandHoldingUsd,
+    faUserCheck,
+    faUserXmark,
+    faBuildingColumns,
+    faCoins,
+    faTaxi,
+    faMobileScreen,
+    faUserGear,
+    faScroll,
+    faChartColumn,
+    faSliders,
+    faCertificate,
+    faClipboardList,
+} from "@fortawesome/free-solid-svg-icons"
 
 const SideBar = () => {
   return (
     <aside className='sidebar'>
-        <div>
-            <img className='icon' src={organisationsIcon} alt='switch organization' />
-            <p>Switch Organization</p>
-            <img className='icon' src={dropdownIcon} alt='dropdown' />
+        <div className='sidebar-top'>
+           <FontAwesomeIcon icon={faBriefcase} />
+            <span>Switch Organization</span>
+            <FontAwesomeIcon icon={faChevronDown} />
         </div>
 
-        <div>
-            <img className='icon' src={dashboardIcon} alt='dashboard' />
-            <p>Dashboard</p>
+        <div className='sidebar-top'>
+        <FontAwesomeIcon icon={faHouseChimney} />
+            <span>Dashboard</span>
         </div>
 
-        <ul>
-                <p>CUSTOMERS</p>
+        <ul className='side-menu'>
+                <h6>CUSTOMERS</h6>
                 <li>
-                    <img className='icon' src={usersIcon} alt='user icon' />
-                    <p>Users</p>
+                <FontAwesomeIcon icon={faUserGroup} />
+                    <span>Users</span>
                 </li>
                 <li>
-                    <img className='icon' src={guarantorsIcon} alt='guarantors icon' />
-                    <p>Guarantors</p>
+                <FontAwesomeIcon icon={faUsers} />
+                    <span>Guarantors</span>
                 </li>
                 <li>
-                    <img className='icon' src={loansIcon} alt='loans icon' />
-                    <p>Loans</p>
+                <FontAwesomeIcon icon={faSackDollar} />
+                    <span>Loans</span>
                 </li>
                 <li>
-                    <img className='icon' src={handshake} alt='handshake icon' />
-                    <p>Decision Models</p>
+                <FontAwesomeIcon icon={faHandshake} />
+                    <span>Decision Models</span>
                 </li>
                 <li>
-                    <img className='icon' src={savingsIcon} alt='savings icon' />
-                    <p>Savings</p>
+                <FontAwesomeIcon icon={faPiggyBank} />
+                    <span>Savings</span>
                 </li>
                 <li>
-                    <img className='icon' src={loanRequestsIcon} alt='loanRequests icon' />
-                    <p>Loan Requests</p>
+                <FontAwesomeIcon icon={faHandHoldingUsd} />
+                    <span>Loan Requests</span>
                 </li>
                 <li>
-                    <img className='icon' src={whitelistIcon} alt='whitelist icon' />
-                    <p>Whitelist</p>
+                <FontAwesomeIcon icon={faUserCheck} />
+                    <span>Whitelist</span>
                 </li>
                 <li>
-                    <img className='icon' src={karmaIcon} alt='karma icon' />
-                    <p>Karma</p>
+                <FontAwesomeIcon icon={faUserXmark} />
+                    <span>Karma</span>
                 </li>
             </ul>
 
             <ul>
-                <p>BUSINESSES</p>
+                <h6>BUSINESSES</h6>
                 <li>
-                    <img className='icon' src={organisationsIcon} alt='organisations icon' />
-                    <p>Organization</p>
+                <FontAwesomeIcon icon={faBriefcase} />
+                    <span>Organization</span>
                 </li>
                 <li>
-                    <img className='icon' src={guarantorsIcon} alt='guarantors icon' />
-                    <p>Loan Products</p>
+                <FontAwesomeIcon icon={faHandHoldingUsd} />
+                    <span>Loan Products</span>
                 </li>
                 <li>
-                    <img className='icon' src={savingsProductsIcon} alt='savingsProducts icon' />
-                    <p>Savings Products</p>
+                <FontAwesomeIcon icon={faBuildingColumns} />
+                    <span>Savings Products</span>
                 </li>
                 <li>
-                    <img className='icon' src={handshake} alt='handshake icon' />
-                    <p>Fees and Charges</p>
+                <FontAwesomeIcon icon={faCoins} />
+                    <span>Fees and Charges</span>
                 </li>
                 <li>
-                    <img className='icon' src={transactionsIcon} alt='savings icon' />
-                    <p>Transactions</p>
+                <FontAwesomeIcon icon={faMobileScreen} />
+                    <span>Transactions</span>
                 </li>
                 <li>
-                    <img className='icon' src={servicesIcon} alt='loanRequests icon' />
-                    <p>Services</p>
+                <FontAwesomeIcon icon={faTaxi} />
+                    <span>Services</span>
                 </li>
                 <li>
-                    <img className='icon' src={whitelistIcon} alt='whitelist icon' />
-                    <p>Service Account</p>
+                <FontAwesomeIcon icon={faUserGear} />
+                    <span>Service Account</span>
                 </li>
                 <li>
-                    <img className='icon' src={settlementsIcon} alt='karma icon' />
-                    <p>Settlements</p>
+                <FontAwesomeIcon icon={faScroll} />
+                    <span>Settlements</span>
                 </li>
                 <li>
-                    <img className='icon' src={reportsIcon} alt='karma icon' />
-                    <p>Reports</p>
+                <FontAwesomeIcon icon={faChartColumn} />
+                    <span>Reports</span>
                 </li>
             </ul>
 
             <ul>
-                <p>SETTINGS</p>
+                <h6>SETTINGS</h6>
                 <li>
-                    <img className='icon' src={preferencesIcon} alt='organisations icon' />
-                    <p>Preferences</p>
+                <FontAwesomeIcon icon={faSliders} />
+                    <span>Preferences</span>
                 </li>
                 <li>
-                    <img className='icon' src={pricingIcon} alt='guarantors icon' />
-                    <p>Fees and Pricing</p>
+                <FontAwesomeIcon icon={faCertificate} />
+                    <span>Fees and Pricing</span>
                 </li>
                 <li>
-                    <img className='icon' src={auditIcon} alt='savingsProducts icon' />
-                    <p>Audit Logs</p>
+                <FontAwesomeIcon icon={faClipboardList} />
+                    <span>Audit Logs</span>
                 </li>
             </ul>
 
